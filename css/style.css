@@ -119,8 +119,8 @@ a {
 
 .welcome-text p {
   font-family: 'Abel', sans-serif;
-  aling-itens: justify;
-  font-size: 18px;
+  text-align: justify;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -325,8 +325,8 @@ a {
 }
 
 .historia-texto p {
-  font-size: 18px;
-  aling-itens: justify;
+  font-size: 17px;
+  text-align: justify;
   line-height: 1.7;
   color: #444;
 }
@@ -613,4 +613,5 @@ a {
     transform: translateY(0);
   }
 }
+
 
