@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSite Noivado - Camilly & Ryan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Vidaloka&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script/script.js"></script>
+</head>
+
+<body>
+  <div class="linha-topo"></div>
+
+  <header>
+    <nav class="navbar">
+
+      <!-- Botão do menu mobile -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <!-- Links da esquerda -->
+      <div class="nav-left nav-links">
+        <a href="#home">Home</a>
+        <a href="#confirmacao">Confirmação de Presença</a>
+      </div>
+
+      <!-- Nome centralizado -->
+      <div class="brand">CAMILLY<br>& RYAN</div>
+
+      <!-- Links da direita -->
+      <div class="nav-right nav-links">
+        <a href="#localizacao">Localização</a>
+        <a href="https://cha-de-casa-nova-o32q.listaideal.com.br/pt">Lista de Presentes</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner" id="home">
+    <img src="images/banner.png" alt="Banner do Noivado" />
+  </section>
+
+  <!-- Seção de boas-vindas -->
+  <section class="welcome-section">
+    <div class="welcome-image">
+      <img src="images/moldura_principal.svg" alt="Noivado" />
+    </div>
+    <div class="welcome-text">
+      <h2>Sejam bem-vindos ao nosso noivado!</h2>
+      <p>
+        Estamos imensamente felizes em compartilhar com vocês a realização de um dos nossos 
+        maiores sonhos: o nosso noivado. Cada passo dessa história é cheio de amor, gratidão 
+        e esperança no futuro que construiremos juntos. Somos gratos a Deus por ter unido 
+        nossos caminhos e por abençoar esse momento tão especial em nossas vidas. 
+        Que Ele continue guiando nossos passos, fortalecendo nosso amor e nos permitindo viver
+        tudo o que sempre sonhamos lado a lado. Hoje celebramos não apenas um noivado, mas o 
+        início de uma nova etapa repleta de fé, alegria e planos a serem realizados.        
+      </p>
+    </div>
+  </section>
+
+  <!-- Galeria de imagens/cards -->
+  <section class="cards-section">
+    <div class="cards-container">
+      <div class="card">
+        <img src="images/card1.jpeg" alt="Card 1" />
+      </div>
+      <div class="card">
+        <img src="images/card2.jpeg" alt="Card 2" />
+      </div>
+      <div class="card">
+        <img src="images/card3.jpeg" alt="Card 3" />
+      </div>
+      <div class="card">
+        <img src="images/card4.jpeg" alt="Card 4" />
+      </div>
+      <div class="card">
+        <img src="images/card5.jpeg" alt="Card 5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="location-section" id="localizacao">
+    <div class="location-content">
+      <div class="location-text">
+        <h2>Localização</h2>
+        <p><strong>Data:</strong> 23 de Maio de 2026</p>
+        <p><strong>Endereço:</strong> Rua Idalina Abude, 117 - Cabuçu Guarulhos - SP</p>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.6353355120086!2d-46.53907952592897!3d-23.40140595573278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef49f94423af1%3A0x5f7dce21ce91205!2sR.%20Idalina%20Abude%2C%20117%20-%20Cabu%C3%A7u%2C%20Guarulhos%20-%20SP%2C%2007075-240%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1758721011401!5m2!1spt-BR!2sus" 
+            width="100%" 
+            height="280" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="location-image">
+        <img src="images/polaroid1.jpeg" alt="Foto Polaroid" />
+        <img src="images/polaroid1.jpeg" alt="Foto Polaroid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contagem regressiva -->
+  <section class="countdown-section">
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <small>Dias</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>Horas</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>Minutos</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>Segundos</small>
+      </div>
+    </div>
+  </section>
+
+    <!-- Nossa história -->
+
+  <section class="historia-detalhada">
+  <div class="historia-container">
+    <div class="historia-imagem">
+      <img src="images/nossa-historia.jpeg" alt="Nossa história" />
+    </div>
+    <div class="historia-texto">
+      <h2>Nossa História</h2>
+      <p>
+        Nossa história começou há 6 anos e, desde então, temos caminhado juntos entre risos, lágrimas, desafios e conquistas. 
+        Foram momentos bons e outros nem tanto, mas em todos eles o amor sempre nos guiou e Deus nos sustentou. 
+        Hoje olhamos para trás com gratidão e para frente com esperança, certos de que o melhor ainda está por vir. 
+        Este é apenas mais um capítulo de uma linda história escrita por Deus.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Confirmação de presença -->
+  <section class="confirmacao-presenca" id="confirmacao">
+    <h2>CONFIRMAÇÃO DE PRESENÇA</h2>
+    <p>
+      Estamos ansiosos para comemorar nosso amor com você! <br>
+      Confirme sua presença e venha compartilhar essa alegria.
+    </p>
+
+    <div class="form-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdz-TcyBVFuceJfr_Ptb4M4zitb4fhEU1NVYP8e0qOJ5fX_dQ/viewform?embedded=true" 
+              width="100%" 
+              height="800" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0">
+        Carregando…
+      </iframe>
+    </div>
+  </section>
+
+  <section class="nossa-historia">
+    <h2>
+      “Para que todos vejam e saibam e considerem e, justamente, entendam que a mão do Senhor fez isso.” – Isaías 41:20
+    </h2>
+
+    <div class="galeria">
+      <img src="images/card1.jpeg" alt="Imagem 1">
+      <img src="images/polaroid1.jpeg" alt="Imagem 2">
+      <img src="images/card2.jpeg" alt="Imagem 3">
+    </div>
+  </section>
+
+  <!-- Lista de presentes -->
+  <section class="lista-presentes" id="presentes">
+    <h2>LISTA DE PRESENTES</h2>
+    <p>
+      O maior presente é ter você conosco nesse momento tão especial,  
+      mas se desejar nos presentear de outra forma, deixamos aqui algumas sugestões com carinho.
+    </p>
+    <a href="https://cha-de-casa-nova-o32q.listaideal.com.br/pt" class="btn-sugestoes" target="_blank">VER SUGESTÕES</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer-casamento">
+    <p class="mensagem">
+      Será incrível ter vocês ao nosso lado neste dia tão especial!
+    </p>
+    <p class="contato">
+      Para dúvidas ou mensagens, envie para: <a href="https://wa.me/5511933095977" target="_blank">11 93309-5977</a>
+    </p>
+    <p class="direitos">
+      © 23/05/2026 Camilly & Ryan. Todos os direitos reservados.
+    </p>
+  </footer>
+
+</body>
+</html>

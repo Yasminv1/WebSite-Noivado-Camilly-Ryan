@@ -1,0 +1,613 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Abel', sans-serif;
+}
+
+/* Linha superior colorida */
+.linha-topo {
+  height: 17px;
+  background-color: #6d7257;
+  width: 100%;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  border-top: 6px solid #6b6b4d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* Links e espaçamento */
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 100px;
+}
+
+/* Nome centralizado */
+.brand {
+  font-size: 32px;
+  font-family: 'Vidaloka', serif;
+  color: #6b6b4d;
+  text-align: center;
+  flex: 1;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Botão menu mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #6b6b4d;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo noivado */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px 40px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.welcome-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.welcome-text {
+  max-width: 600px;
+}
+
+.welcome-text h2 {
+  font-family: 'Vidaloka', serif;
+  font-size: 30px;
+  color: #6b6b4d;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cards-section {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  box-shadow: 8px 4px 8px rgba(0,0,0,0.1);
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+}
+
+.card {
+  flex: 0 0 33.3333%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.location-section {
+  background-color: #fff;
+  padding: 80px 20px;
+}
+
+.location-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.location-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.location-text h2 {
+  font-family: 'Vidaloka', serif;
+  font-size: 28px;
+  color: #6b6b4d;
+  margin-bottom: 15px;
+}
+
+.location-text p {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.location-image {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.location-image img {
+  width: 50%;
+  max-width: 200px;
+  border: 10px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: rotate(7deg);
+  transition: transform 0.3s ease;
+}
+
+.location-image img:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.countdown-section {
+  background-color: #6D7257;
+  text-align: center;
+  padding: 50px 20px;
+  margin: 3% 0 3% 0;
+  color: #6b6b4d;
+}
+
+.countdown-section h2 {
+  font-family: 'Vidaloka', serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px 15px;
+  min-width: 80px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.time-box span {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Vidaloka', serif;
+  color: #333;
+}
+
+.time-box small {
+  font-size: 14px;
+  font-family: 'Abel', sans-serif;
+  color: #6b6b4d;
+}
+
+.confirmacao-presenca {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmacao-presenca h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.confirmacao-presenca p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.form-container iframe {
+  border: none;
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+}
+
+
+.historia-detalhada {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.historia-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  align-items: center;
+}
+
+.historia-imagem {
+  flex: 1 1 350px;
+  order: 2;
+}
+
+.historia-imagem img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.historia-texto {
+  flex: 1 1 500px;
+  order: 1;
+}
+
+.historia-texto h2 {
+  font-family: 'Vidaloka', serif;
+  font-size: 32px;
+  color: #6b6b4d;
+  margin-bottom: 20px;
+}
+
+.historia-texto p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.nossa-historia {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.nossa-historia h2 {
+  font-size: 23px;
+  font-family: 'Vidaloka', serif;
+  color: #6d7257;
+  margin-bottom: 40px;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.lista-presentes {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lista-presentes h2 {
+  font-size: 28px;
+  color: #6d7257;
+  margin-bottom: 20px;
+}
+
+.lista-presentes p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.btn-sugestoes {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #6b6b4d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sugestoes:hover {
+  background-color: #b6b693;
+}
+
+.footer-casamento {
+  background-color: #6D7257;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-casamento .mensagem {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-casamento .contato a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-casamento .contato a:hover {
+  text-decoration: underline;
+}
+
+.footer-casamento .direitos {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .welcome-section {
+    gap: 40px;
+    padding: 30px 15px;
+  }
+
+  .welcome-text h2 {
+    font-size: 26px;
+  }
+
+  .welcome-text p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .nav-left.active,
+  .nav-right.active {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .brand {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+
+  .banner {
+    height: 200px;
+  }
+
+   .welcome-section {
+    flex-direction: column-reverse; /* imagem fica abaixo do texto */
+    padding: 50px 20px;
+    gap: 20px;
+  }
+
+  .welcome-image img {
+    display: none;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .welcome-text h2 {
+    font-size: 24px;
+  }
+
+  .welcome-text p {
+    font-size: 14px;
+  }
+  .card {
+    flex: 0 0 100%; /* só 1 card por vez no celular */
+  }
+  .location-content {
+    display: flex;
+    justify-content: center;   /* centraliza */
+    gap: 10px;                 /* espaço entre as fotos */
+    flex-wrap: wrap;    
+  }
+
+  .location-image img{
+    width: 48%; /* ajusta tamanho relativo */
+  }
+
+  .location-image{
+    margin: 12% 0 0 0 ;
+    padding: 2%;
+  }
+
+  .location-text h2 {
+    text-align: center;
+  }
+
+  .location-text p {
+    text-align: center;
+  }
+  .countdown {
+    gap: 20px;
+  }
+
+  .time-box {
+    padding: 15px 10px;
+    min-width: 70px;
+  }
+
+  .time-box span {
+    font-size: 26px;
+  }
+  .galeria {
+    display: flex;
+    justify-content: center;   /* centraliza */
+    gap: 10px;                 /* espaço entre as fotos */
+    flex-wrap: wrap;           /* permite quebrar linha se não couber */
+  }
+  .galeria img{
+     width: 30%; /* ajusta tamanho relativo */
+     max-width: 300px;
+  }
+  
+  .lista-presentes h2 {
+    font-size: 24px;
+  }
+
+  .lista-presentes p {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  .btn-sugestoes {
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .footer-casamento {
+    font-size: 15px;
+    padding: 30px 15px;
+  }
+
+  .footer-casamento .mensagem {
+    font-size: 16px;
+  }
+
+  .footer-casamento .direitos {
+    font-size: 13px;
+  }
+  .historia-container {
+  text-align: center;
+  margin: 0;
+  gap: 40px;
+}
+
+.historia-texto h2 {
+  margin-top: 20px;
+}
+}
+
+/* Animação fade para menu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
