@@ -272,7 +272,7 @@ a {
 }
 
 .confirmacao-presenca p {
-  font-size: 15px;
+  font-size: 18px;
   color: #555;
   margin-bottom: 40px;
   line-height: 1.6;
@@ -432,7 +432,13 @@ a {
   color: #fff;
   margin-top: 20px;
 }
-
+.confirmacao-presenca p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+ }
+}
 
 
 /* Responsividade */
@@ -512,7 +518,7 @@ a {
   }
 
   .welcome-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .card {
     flex: 0 0 100%; /* só 1 card por vez no celular */
@@ -599,6 +605,10 @@ a {
 .historia-texto h2 {
   margin-top: 20px;
 }
+
+.historia-texto p {
+  font-size: 16px;
+}
 }
 
 /* Animação fade para menu */
@@ -613,5 +623,6 @@ a {
     transform: translateY(0);
   }
 }
+
 
 
