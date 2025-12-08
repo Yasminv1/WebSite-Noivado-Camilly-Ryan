@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // CONTAGEM REGRESSIVA
 // =========================
 const countdown = () => {
-  const endDate = new Date('2026-05-23T00:00:00'); // Data do noivado
+  const endDate = new Date('2026-01-24T00:00:00'); // Data do noivado
   const now = new Date();
   const diff = endDate - now;
 
@@ -89,3 +89,4 @@ const countdown = () => {
 // Atualizar contagem a cada 1 segundo
 setInterval(countdown, 1000);
 countdown(); // Iniciar imediatamente
+
