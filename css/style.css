@@ -16,14 +16,14 @@ body {
 /* Linha superior colorida */
 .linha-topo {
   height: 17px;
-  background-color: #6d7257;
+  background-color: black;
   width: 100%;
 }
 
 /* Header */
 header {
   background-color: #fff;
-  border-top: 6px solid #6b6b4d;
+  border-top: 6px solid black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,7 +53,7 @@ header {
 .brand {
   font-size: 32px;
   font-family: 'Vidaloka', serif;
-  color: #6b6b4d;
+  color: black;
   text-align: center;
   flex: 1;
 }
@@ -71,7 +71,7 @@ a {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: #6b6b4d;
+  color: black;
 }
 
 /* Banner */
@@ -113,7 +113,7 @@ a {
 .welcome-text h2 {
   font-family: 'Vidaloka', serif;
   font-size: 30px;
-  color: #6b6b4d;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -176,7 +176,7 @@ a {
 .location-text h2 {
   font-family: 'Vidaloka', serif;
   font-size: 28px;
-  color: #6b6b4d;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -215,11 +215,11 @@ a {
 }
 
 .countdown-section {
-  background-color: #6D7257;
+  background-color: black;
   text-align: center;
   padding: 50px 20px;
   margin: 3% 0 3% 0;
-  color: #6b6b4d;
+  color: black;
 }
 
 .countdown-section h2 {
@@ -254,7 +254,7 @@ a {
 .time-box small {
   font-size: 14px;
   font-family: 'Abel', sans-serif;
-  color: #6b6b4d;
+  color: black;
 }
 
 .confirmacao-presenca {
@@ -322,7 +322,7 @@ a {
 .historia-texto h2 {
   font-family: 'Vidaloka', serif;
   font-size: 32px;
-  color: #6b6b4d;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -343,7 +343,7 @@ a {
 .nossa-historia h2 {
   font-size: 23px;
   font-family: 'Vidaloka', serif;
-  color: #6d7257;
+  color: black;
   margin-bottom: 40px;
 }
 
@@ -394,7 +394,7 @@ a {
 .btn-sugestoes {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #6b6b4d;
+  background-color: black;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -404,11 +404,11 @@ a {
 }
 
 .btn-sugestoes:hover {
-  background-color: #b6b693;
+  background-color: #404040;
 }
 
 .footer-casamento {
-  background-color: #6D7257;
+  background-color: #404040;
   padding: 40px 20px;
   text-align: center;
   color: #fff;
@@ -625,6 +625,7 @@ a {
     transform: translateY(0);
   }
 }
+
 
 
 
