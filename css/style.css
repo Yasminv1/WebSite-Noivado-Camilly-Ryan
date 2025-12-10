@@ -119,8 +119,7 @@ a {
 
 .welcome-text p {
   font-family: 'Abel', sans-serif;
-  text-align: justify;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -189,6 +188,9 @@ a {
 
 .map-container {
   margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .location-image {
@@ -299,7 +301,6 @@ a {
 
 .historia-imagem {
   flex: 1 1 350px;
-  order: 2;
 }
 
 .historia-imagem img {
@@ -311,7 +312,6 @@ a {
 
 .historia-texto {
   flex: 1 1 500px;
-  order: 1;
 }
 
 .historia-texto h2 {
@@ -322,8 +322,7 @@ a {
 }
 
 .historia-texto p {
-  font-size: 17px;
-  text-align: justify;
+  font-size: 18px;
   line-height: 1.7;
   color: #444;
 }
@@ -429,14 +428,6 @@ a {
   color: #fff;
   margin-top: 20px;
 }
-.confirmacao-presenca p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 40px;
-  line-height: 1.6;
- }
-}
-
 
 /* Responsividade */
 
@@ -515,25 +506,18 @@ a {
   }
 
   .welcome-text p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .card {
     flex: 0 0 100%; /* só 1 card por vez no celular */
   }
   .location-content {
-    display: flex;
-    justify-content: center;   /* centraliza */
-    gap: 10px;                 /* espaço entre as fotos */
-    flex-wrap: wrap;    
+    flex-direction: column;
+    align-items: center;
   }
 
-  .location-image img{
-    width: 48%; /* ajusta tamanho relativo */
-  }
-
-  .location-image{
-    margin: 12% 0 0 0 ;
-    padding: 2%;
+  .location-image {
+    margin-top: 30px;
   }
 
   .location-text h2 {
@@ -556,17 +540,10 @@ a {
     font-size: 26px;
   }
   .galeria {
-    display: flex;
-    justify-content: center;   /* centraliza */
-    gap: 10px;                 /* espaço entre as fotos */
-    flex-wrap: wrap;           /* permite quebrar linha se não couber */
+    flex-direction: column;
+    align-items: center;
   }
-  .galeria img{
-     width: 30%; /* ajusta tamanho relativo */
-     max-width: 300px;
-  }
-  
-  .lista-presentes h2 {
+    .lista-presentes h2 {
     font-size: 24px;
   }
 
@@ -594,17 +571,13 @@ a {
     font-size: 13px;
   }
   .historia-container {
+  flex-direction: column;
   text-align: center;
   margin: 0;
-  gap: 40px;
 }
 
 .historia-texto h2 {
   margin-top: 20px;
-}
-
-.historia-texto p {
-  font-size: 16px;
 }
 }
 
@@ -620,7 +593,3 @@ a {
     transform: translateY(0);
   }
 }
-
-
-
-
