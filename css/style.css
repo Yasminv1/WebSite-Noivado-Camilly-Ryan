@@ -254,7 +254,7 @@ a {
 .time-box small {
   font-size: 14px;
   font-family: 'Abel', sans-serif;
-  color: black;
+  color: #404040;
 }
 
 .confirmacao-presenca {
@@ -379,7 +379,7 @@ a {
 
 .lista-presentes h2 {
   font-size: 28px;
-  color: #6d7257;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -625,6 +625,7 @@ a {
     transform: translateY(0);
   }
 }
+
 
 
 
